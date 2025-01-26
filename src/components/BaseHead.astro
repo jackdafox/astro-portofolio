@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
 import { AstroSeo } from "@astrolib/seo";
+import favicon from "../favicon.ico"
 ---
 
 <AstroSeo
   title="Dzaky's Portfolio"
   description="A detailed description of your page content."
-  canonical="https://yoursite.com/current-page"
+  canonical="https://muhammaddzaky-port.vercel.app/"
   openGraph={{
     url: "https://yoursite.com/current-page",
     title: "Your Page Title",
@@ -43,7 +44,7 @@ import { AstroSeo } from "@astrolib/seo";
 <meta name="author" content="Your Name or Company Name" />
 
 <!-- Favicons -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href={favicon} sizes="any" />
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/manifest.webmanifest" />
