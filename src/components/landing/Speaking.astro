@@ -6,21 +6,15 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 const speaking = [
   {
     period: "2023",
-    title: "The Evolution of Swiss Typography",
-    description: `Delivered a keynote on how Swiss typography principles have influenced modern digital design. Highlighted the role of grid systems and minimalism.`,
-    location: "International Design Conference, Zurich, Switzerland",
+    title: "First Place in ICT AR Competition Competition of Science, Arts, and Sports (KS2O)",
   },
   {
     period: "2022",
-    title: "Mastering Grid Systems",
-    description: `Conducted a workshop on creating effective grid systems for print and digital media, emphasizing the precision and balance of Swiss design.`,
-    location: "Design Week, Basel, Switzerland",
+    title: "MakeX Robotic Competition Malaysia Champion",
   },
   {
     period: "2021",
     title: "The Future of Minimalist Design",
-    description: `Participated in a panel discussion about the enduring appeal of minimalist design and its potential applications in emerging technologies.`,
-    location: "European Design Symposium, Geneva, Switzerland",
   },
 ];
 ---
@@ -32,13 +26,13 @@ const speaking = [
       variant="textBase"
       class="font-semibold text-zinc-900 dark:text-zinc-200"
     >
-      Education
+      Achievements
     </Text>
 
-    <div class="flex flex-col gap-12 mt-8">
+    <div class="flex flex-col gap-3 mt-8">
       {
         speaking.map((work, index) => (
-          <div class="grid grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5">
             {/* Period */}
             <Text tag="span" variant="textSM" class="font-medium text-zinc-500">
               {work.period}
@@ -49,23 +43,9 @@ const speaking = [
               <Text
                 tag="h4"
                 variant="textBase"
-                class="font-semibold text-zinc-900 dark:text-zinc-200  flex justify-between w-full"
+                class="font-semibold text-zinc-900 dark:text-zinc-200 flex justify-between w-full"
               >
                 {work.title}
-              </Text>
-              <Text
-                tag="p"
-                variant="textSM"
-                class="text-zinc-600 dark:text-zinc-500  mt-2"
-              >
-                {work.description}
-              </Text>
-              <Text
-                tag="p"
-                variant="textSM"
-                class="text-zinc-600 dark:text-zinc-500  mt-2"
-              >
-                {work.location}
               </Text>
             </div>
           </div>

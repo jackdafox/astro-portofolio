@@ -6,23 +6,23 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 const work = [
   {
     period: "2023–2025",
-    title: "Swiss Modernism Showcase",
+    title: "PPI Universiti Malaya",
     description: `Curated and designed an exhibition highlighting the evolution of Swiss modernism in graphic design, showcasing iconic works and their influence on contemporary design.`,
-    location: "Zurich, Switzerland",
+    role: "Deputy Head of Media and Communication Division",
     link: "#_", // Placeholder link
   },
   {
     period: "2020–2023",
-    title: "Helvetica Redefined",
+    title: "IDFEST",
     description: `Redesigned the Helvetica type specimen to include modern variations and applications. The project explored the typeface's versatility and its legacy in Swiss design.`,
-    location: "Basel, Switzerland",
+    role: "Head of Design",
     link: "#_", // Placeholder link
   },
   {
     period: "2017–2020",
-    title: "Swiss Design Principles",
+    title: "POERNAMA FEST",
     description: `Developed educational materials and workshops on the core principles of Swiss design, focusing on grid systems, typography, and minimalist aesthetics.`,
-    location: "Geneva, Switzerland",
+    role: "Designer",
     link: "#_", // Placeholder link
   },
 ];
@@ -35,7 +35,7 @@ const work = [
       variant="textBase"
       class="font-semibold text-zinc-900 dark:text-zinc-200"
     >
-      Work
+      Experiences
     </Text>
 
     <div class="flex flex-col gap-12 mt-8">
@@ -70,7 +70,7 @@ const work = [
                 variant="textSM"
                 class="text-zinc-600 dark:text-zinc-500  mt-2"
               >
-                {work.location}
+                {work.role}
               </Text>
             </div>
           </div>
