@@ -1,29 +1,20 @@
 ---
 import "../styles/global.css";
-import { AstroSeo } from "@astrolib/seo";
-import favicon from "../favicon.ico"
+import { SEO } from "astro-seo";
+import favicon from "../favicon.ico";
 ---
 
-<AstroSeo
+<SEO
   title="Dzaky's Portfolio"
   description="A brief description of my projects, expereinces, and skills."
   canonical="https://muhammaddzaky-port.vercel.app/"
   openGraph={{
-    url: "https://yoursite.com/current-page",
-    title: "Dzaky's Portfolio",
-    description: "A brief description of my projects, expereinces, and skills.",
-    images: [
-      {
-        url: "https://yoursite.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Open Graph Image Alt",
-        type: "image/jpeg",
-      },
-    ],
-    site_name: "Dzaky's Portfolio",
-    type: "website",
-    locale: "en_US",
+    basic: {
+      title: "Dzaky's Portfolio",
+      type: "website",
+      image: "https://muhammaddzaky-port.vercel.app/og-image.jpg",
+      url: "https://muhammaddzaky-port.vercel.app/",
+    },
   }}
 />
 <meta charset="UTF-8" />
@@ -31,10 +22,7 @@ import favicon from "../favicon.ico"
 
 <!-- Basic Meta Tags -->
 <title>Dzaky's Portfolio</title>
-<meta
-  name="description"
-  content="A brief description of me"
-/>
+<meta name="description" content="A brief description of me" />
 <meta name="author" content="Muhammad Dzaky" />
 
 <!-- Favicons -->

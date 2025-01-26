@@ -100,14 +100,14 @@ const sortedProjects = projects.sort(
   <Wrapper variant="base">
     <Text
       tag="h3"
-      variant="textBase"
+      variant="displayLG"
       class="font-semibold text-zinc-900 dark:text-zinc-200"
     >
       Projects
     </Text>
     {
       sortedProjects.map((project) => (
-        <div class="grid grid-cols-1 mt-12 gap-4 md:grid-cols-2 lg:grid-cols-5">
+        <div class="grid grid-cols-1 mt-7 lg:mt-12 gap-4 md:grid-cols-2 lg:grid-cols-5">
           {/* Year */}
           <Text tag="span" variant="textSM" class="font-medium text-zinc-500">
             {project.year}
